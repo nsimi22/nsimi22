@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Nick Simi (@nsimi22)
 
 ## About Me
-I'm a **Product Manager** who bridges the gap between business strategy and technical execution. I don't just manage products—I build them, ship them, and iterate on them with a hands-on approach that keeps me close to the code and the customer.
+I'm a **Group Product Manager** who bridges the gap between business strategy and technical execution. I don't just manage products—I build them, ship them, and iterate on them with a hands-on approach that keeps me close to the code and the customer.
 
 ## 🚀 My Approach: Vibe Coding with AI
 
@@ -36,7 +36,7 @@ I've embraced **AI-powered development** as a force multiplier for product veloc
 - Exploring how LLMs can bridge the gap between product requirements and working software
 
 ## 📫 Let's Connect
-- 📧 Email: nsimi@freedomforever.com
+- 📧 Email: nsimi2345@gmail.com
 - 💼 Open to collaborating on innovative product ideas, AI tooling, or anything at the intersection of product and engineering
 
 ---
