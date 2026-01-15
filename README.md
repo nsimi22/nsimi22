@@ -1,44 +1,144 @@
-# 👋 Hi, I'm Nick Simi (@nsimi22)
+# SimiCode IDE Mobile
 
-## About Me
-I'm a **Group Product Manager** who bridges the gap between business strategy and technical execution. I don't just manage products—I build them, ship them, and iterate on them with a hands-on approach that keeps me close to the code and the customer.
+An AI-powered mobile code editor with Claude integration. Edit code, manage git repositories, and leverage AI assistance directly from your mobile device.
 
-## 🚀 My Approach: Vibe Coding with AI
+## Features
 
-I've embraced **AI-powered development** as a force multiplier for product velocity. Using tools like Claude Code, I've transformed how I work:
+- **AI-Powered Coding**: Integrated Claude AI for code editing, explanations, and suggestions
+- **Terminal Interface**: Familiar command-line interface optimized for mobile
+- **File Browser**: Browse and edit files from cloud storage (iCloud)
+- **Git Integration**: Commit changes and create pull requests on the go
+- **Authentication**: Support for both OAuth and API key authentication
 
-- **Rapid Prototyping**: From idea to working code in minutes, not days
-- **Full-Stack Fluency**: Jumping between React frontends, Laravel backends, and database migrations without context switching friction
-- **Documentation as Code**: Keeping technical documentation accurate by having AI verify it against the actual codebase
-- **Smart Debugging**: AI helps me trace complex issues across codebases, identify root causes, and implement fixes with surgical precision
+## Getting Started
 
-### Recent Wins
-- Built commission calculation documentation for complex dealer payment structures
-- Implemented DNC (Do Not Contact) compliance fixes with single-file precision PRs
-- Shipped feature flags, permission systems, and UI improvements across multiple projects
-- Maintained zero-downtime deployments while iterating on production systems
+### Prerequisites
 
-## 🛠️ Tech Stack
-- **Frontend**: React 18, Material-UI, Webpack
-- **Backend**: Laravel 9, PHP 8.1+, MySQL
-- **Tools**: Git, Jira, Confluence, Claude Code
-- **Methodologies**: Agile/Scrum, CI/CD, Test-Driven Development
+- Node.js 18+
+- npm or yarn
+- Expo CLI (`npm install -g expo-cli`)
+- iOS Simulator or Android Emulator (or physical device)
 
-## 💡 What I Believe
-- **Product managers should code**: Staying technical makes me a better PM
-- **AI is a teammate, not a replacement**: It amplifies human creativity and judgment
-- **Ship fast, iterate faster**: Velocity matters when you have tight feedback loops
-- **Documentation lives with the code**: If the docs are wrong, the AI should catch it
+### Installation
 
-## 🎯 What I'm Working On
-- Scaling solar installation platforms for enterprise customers
-- Building AI-assisted workflows that make teams 10x more productive
-- Exploring how LLMs can bridge the gap between product requirements and working software
+1. Clone the repository:
+```bash
+git clone https://github.com/nsimi22/SimiCodeIDE-Mobile.git
+cd SimiCodeIDE-Mobile
+```
 
-## 📫 Let's Connect
-- 📧 Email: nsimi2345@gmail.com
-- 💼 Open to collaborating on innovative product ideas, AI tooling, or anything at the intersection of product and engineering
+2. Install dependencies:
+```bash
+npm install
+```
 
----
+3. Start the development server:
+```bash
+npm start
+```
 
-*"The best product managers are the ones who can't resist getting their hands dirty."*
+4. Run on your device:
+- Press `i` for iOS simulator
+- Press `a` for Android emulator
+- Scan the QR code with Expo Go app for physical device
+
+## Usage
+
+### Authentication
+
+Before using the AI features, authenticate with your Anthropic account:
+
+- **OAuth**: Type `/login` in the terminal
+- **API Key**: Type `/auth <your-api-key>`
+
+Get your API key at [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys)
+
+### Commands
+
+| Command | Description |
+|---------|-------------|
+| `/help` | Show available commands |
+| `/login` | Sign in with OAuth |
+| `/auth <key>` | Authenticate with API key |
+| `/whoami` | Show current user info |
+| `/logout` | Sign out |
+| `/files` | Toggle file browser |
+| `/status` | Show git status |
+| `/diff` | Show pending changes |
+| `/commit <msg>` | Commit staged changes |
+| `/pr <title>` | Create a pull request |
+| `/clear` | Clear terminal |
+
+### Interacting with Claude
+
+Simply type your request in the terminal:
+
+- "Add error handling to the API functions"
+- "Explain this code"
+- "Refactor this function to use async/await"
+- "Fix the bug in the login flow"
+
+## Architecture
+
+```
+src/
+├── components/       # UI components
+│   ├── common/      # Shared components (Icon, etc.)
+│   ├── terminal/    # Terminal UI components
+│   ├── file-browser/ # File tree components
+│   ├── git/         # Git-related components
+│   └── settings/    # Settings modal
+├── contexts/        # React contexts
+│   ├── AuthContext  # Authentication state
+│   ├── FileTreeContext # File system state
+│   └── TerminalContext # Terminal state
+├── services/        # API and storage services
+│   ├── claude.ts    # Claude API integration
+│   └── storage.ts   # Secure storage
+├── screens/         # Main screens
+├── hooks/           # Custom React hooks
+├── types/           # TypeScript types
+├── utils/           # Utility functions
+└── constants/       # App constants
+```
+
+## Tech Stack
+
+- **React Native** with Expo
+- **TypeScript** for type safety
+- **Expo Router** for navigation
+- **Zustand** for state management
+- **Expo Secure Store** for secure credential storage
+- **Claude API** for AI features
+
+## Building for Production
+
+### iOS
+
+```bash
+npm run build:ios
+```
+
+### Android
+
+```bash
+npm run build:android
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is proprietary software. All rights reserved.
+
+## Acknowledgments
+
+- [Anthropic](https://anthropic.com) for Claude AI
+- [Expo](https://expo.dev) for the development framework
+- [Lucide](https://lucide.dev) for the icon set
