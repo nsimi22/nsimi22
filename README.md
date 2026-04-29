@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Nick Simi (@nsimi22)
 
 ## About Me
-I'm a **Group Product Manager** who bridges the gap between business strategy and technical execution. I don't just manage products—I build them, ship them, and iterate on them with a hands-on approach that keeps me close to the code and the customer.
+I'm a **Head of AI Product** who bridges the gap between business strategy and technical execution. I don't just manage products—I build them, ship them, and iterate on them with a hands-on approach that keeps me close to the code and the customer.
 
 ## 🚀 My Approach: Vibe Coding with AI
 
